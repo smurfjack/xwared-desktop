@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Categories=Network;
+Exec=/opt/xwared/xwared-desktop
+GenericName[en_US]=Thunder xwared
+GenericName=远程迅雷
+Icon=/opt/xwared/xware-desktop.png
+Name[en_US]=xwared-desktop
+Name=远程迅雷
+StartupNotify=true
+Terminal=false
+Type=Application

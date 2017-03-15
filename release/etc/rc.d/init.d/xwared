@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# xwared        Startup script for the thunder xwared
+#
+# chkconfig: 3 85 15
+# description: xwared is the thunder local server
+#
+/opt/xwared/portal
