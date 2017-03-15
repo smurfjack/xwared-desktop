@@ -28,8 +28,8 @@ void MainWindow::on_pushButton_start_clicked()
     flushTips("迅雷后台启动中...");
     cmd->start("pkexec /opt/xwared/portal");
     qDebug("start ...");
-    cmd->waitForFinished();
-    this->close();
+    //cmd->waitForFinished();
+    //this->close();
 
 }
 
@@ -41,7 +41,8 @@ void MainWindow::on_pushButton_stop_clicked()
      flushTips("迅雷后台停止中...");
      cmd->start("pkexec /opt/xwared/portal -s");
      cmd->waitForFinished();
-     this->close();
+     flushTips("迅雷后台已停止...",1);
+     //this->close();
 }
 
 void MainWindow::readOutput()
@@ -79,6 +80,7 @@ void MainWindow::readOutput()
         bindName = bindName_tmp;
         binded = true;
         flushTips("激活状态...√...绑定名("+bindName+")",1);
+        QDesktopServices::openUrl(url);
     }else if(ci != -1){
         binded = false;
         flushTips("错误:无法获取迅雷服务信息\n请尝试重启本程序或再次点击\"启动\"",2);
@@ -108,4 +110,5 @@ void MainWindow::flushTips(QString tips,int type)
     }else{
     ui->label_tips->setText("tips length error!");
     }
+
 }

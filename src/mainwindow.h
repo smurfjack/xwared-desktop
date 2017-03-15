@@ -5,6 +5,7 @@
 #include <QProcess>
 #include <QDesktopServices>
 #include <QTextEdit>
+#include <QElapsedTimer>
 namespace Ui {
 class MainWindow;
 }
