@@ -5,7 +5,7 @@
 #include <QProcess>
 #include <QDesktopServices>
 #include <QTextEdit>
-#include <QElapsedTimer>
+#include <QTime>
 namespace Ui {
 class MainWindow;
 }
@@ -33,6 +33,7 @@ private:
     QString output;
     bool binded;
     void flushTips(QString tips,int type=0);
+    void sleep(unsigned int msec);
 };
 
 #endif // MAINWINDOW_H

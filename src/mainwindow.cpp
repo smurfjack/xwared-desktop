@@ -79,8 +79,10 @@ void MainWindow::readOutput()
         bindName_tmp.remove(bindName_tmp.length()-1);
         bindName = bindName_tmp;
         binded = true;
-        flushTips("激活状态...√...绑定名("+bindName+")",1);
+        flushTips("激活状态...√...绑定名("+bindName+")\n3s后程序将自动退出,enjoy it！",1);
         QDesktopServices::openUrl(url);
+        sleep(3000);
+        this->close();
     }else if(ci != -1){
         binded = false;
         flushTips("错误:无法获取迅雷服务信息\n请尝试重启本程序或再次点击\"启动\"",2);
@@ -111,4 +113,11 @@ void MainWindow::flushTips(QString tips,int type)
     ui->label_tips->setText("tips length error!");
     }
 
+}
+//delay
+void MainWindow::sleep(unsigned int msec)
+{
+QTime dieTime = QTime::currentTime().addMSecs(msec);
+while( QTime::currentTime() < dieTime )
+QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
 }
