@@ -1,6 +1,6 @@
-![image](https://github.com/smurfjack/xwared-desktop/master/image-folder/raw/yuancheng.png)
-![image](https://github.com/smurfjack/xwared-desktop/master/image-folder/raw/start.png)
-![image](https://github.com/smurfjack/xwared-desktop/master/image-folder/raw/stop.png)
+![image](https://github.com/smurfjack/xwared-desktop/blob/master/image-folder/raw/yuancheng.png)
+![image](https://github.com/smurfjack/xwared-desktop/blob/master/image-folder/raw/start.png)
+![image](https://github.com/smurfjack/xwared-desktop/blob/master/image-folder/raw/stop.png)
 #GUI Version:1.0<br/>
 #xwared Version:1.0.31<br/>
 #language:QT c++ shell<br/>
