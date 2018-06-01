@@ -117,8 +117,8 @@
      </rect>
     </property>
     <property name="text">
-     <string>Author - smurfjack
-Home  - http://www.123kuai.com</string>
+     <string>Author:smurfjack
+@2018</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -134,7 +134,7 @@ Home  - http://www.123kuai.com</string>
      <x>0</x>
      <y>0</y>
      <width>371</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

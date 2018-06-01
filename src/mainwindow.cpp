@@ -26,7 +26,7 @@ void MainWindow::on_pushButton_start_clicked()
     ui->pushButton_stop->setDisabled(false);
     output.clear();
     flushTips("迅雷后台启动中...");
-    cmd->start("pkexec /opt/xwared/portal");
+    cmd->start("pkexec --user thunder /opt/xwared/portal");
     qDebug("start ...");
     //cmd->waitForFinished();
     //this->close();
@@ -39,7 +39,7 @@ void MainWindow::on_pushButton_stop_clicked()
      ui->pushButton_start->setDisabled(false);
      ui->pushButton_stop->setDisabled(true);
      flushTips("迅雷后台停止中...");
-     cmd->start("pkexec /opt/xwared/portal -s");
+     cmd->start("pkexec --user thunder /opt/xwared/portal -s");
      cmd->waitForFinished();
      flushTips("迅雷后台已停止...",1);
      //this->close();
